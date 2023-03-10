@@ -11,7 +11,7 @@ import { createCardForDeckController } from "./controllers/createDeckForDeckCont
 config({ path: path.resolve(__dirname, "./.env") });
 import { deleteCardOnDeckController } from "./controllers/deleteCardOnDeckController";
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const app = express();
 
 // middleware
